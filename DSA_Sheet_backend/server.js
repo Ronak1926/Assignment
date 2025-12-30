@@ -21,17 +21,18 @@ app.set('trust proxy', 1);
 
 
 app.use(cors({
-  origin: true, // reflect request origin
+  origin: "https://assignment-git-master-ronak1926s-projects.vercel.app",
   credentials: true
 }));
+
 
 app.use(express.json());
 app.use(cookieParser());
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI)
-    .then(() => console.log('MongoDB Connected'))
-    .catch(err => console.log(err));
+  .then(() => console.log('MongoDB Connected'))
+  .catch(err => console.log(err));
 
 // Call seed function on startup (disabled after initial seeding)
 // mongoose.connection.once('open', seedDatabase);
@@ -42,5 +43,5 @@ app.use('/api/topics', topicRoutes);
 
 // Start Server
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });

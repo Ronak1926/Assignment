@@ -12,8 +12,8 @@ const getCookieOptions = () => {
   if (process.env.NODE_ENV === 'production') {
     return {
       httpOnly: true,
-      secure: true,       
-      sameSite: 'none',   
+      secure: true,
+      sameSite: 'none',
       path: '/',
     };
   }
