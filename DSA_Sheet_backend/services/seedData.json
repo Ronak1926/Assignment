@@ -1,0 +1,114 @@
+[
+  {
+    "title": "Algorithms",
+    "status": "Pending",
+    "subTopics": [
+      { "name": "Sorting Algorithms", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Done", "isChecked": true },
+      { "name": "Searching Algorithms", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false },
+      { "name": "Dynamic Programming", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Greedy Algorithms", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Divide and Conquer", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Done", "isChecked": true },
+      { "name": "Backtracking", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false }
+    ]
+  },
+  {
+    "title": "Data Structures",
+    "status": "Pending",
+    "subTopics": [
+      { "name": "Arrays", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false },
+      { "name": "Linked Lists", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Stacks", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false },
+      { "name": "Queues", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false },
+      { "name": "Trees", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Graphs", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false }
+    ]
+  },
+  {
+    "title": "Databases",
+    "status": "Pending",
+    "subTopics": [
+      { "name": "SQL Basics", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false },
+      { "name": "Normalization", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Indexing", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false },
+      { "name": "Transactions", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Joins", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false }
+    ]
+  },
+  {
+    "title": "Machine Learning",
+    "status": "Pending",
+    "subTopics": [
+      { "name": "Supervised Learning", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Unsupervised Learning", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false },
+      { "name": "Reinforcement Learning", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false },
+      { "name": "Feature Engineering", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Model Evaluation", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false }
+    ]
+  },
+  {
+    "title": "Operating Systems",
+    "status": "Pending",
+    "subTopics": [
+      { "name": "Process Management", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Memory Management", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false },
+      { "name": "File Systems", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Concurrency", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false },
+      { "name": "Scheduling", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false }
+    ]
+  },
+  {
+    "title": "Networks",
+    "status": "Pending",
+    "subTopics": [
+      { "name": "OSI Model", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "TCP/IP", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false },
+      { "name": "Routing", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Switching", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false },
+      { "name": "Network Security", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false }
+    ]
+  },
+  {
+    "title": "Mathematics",
+    "status": "Pending",
+    "subTopics": [
+      { "name": "Number Theory", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Probability", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false },
+      { "name": "Combinatorics", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Linear Algebra", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Calculus", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false }
+    ]
+  },
+  {
+    "title": "Software Engineering",
+    "status": "Pending",
+    "subTopics": [
+      { "name": "SDLC", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false },
+      { "name": "Design Patterns", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false },
+      { "name": "Version Control", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false },
+      { "name": "Code Review", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Testing", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false }
+    ]
+  },
+  {
+    "title": "Web Development",
+    "status": "Pending",
+    "subTopics": [
+      { "name": "HTML/CSS", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false },
+      { "name": "React", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "JavaScript Basics", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false },
+      { "name": "Responsive Design", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "APIs & JSON", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false }
+    ]
+  },
+  {
+    "title": "Cloud Computing",
+    "status": "Pending",
+    "subTopics": [
+      { "name": "AWS Basics", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Docker/Kubernetes", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "HARD", "status": "Pending", "isChecked": false },
+      { "name": "Cloud Storage", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "EASY", "status": "Pending", "isChecked": false },
+      { "name": "Serverless", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false },
+      { "name": "Monitoring", "leetcodeLink": "#", "youtubeLink": "#", "articleLink": "#", "level": "MEDIUM", "status": "Pending", "isChecked": false }
+    ]
+  }
+]
