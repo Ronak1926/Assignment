@@ -7,6 +7,31 @@ const JWT_SECRET = process.env.JWT_SECRET || 'secret';
 const generateToken = (payload) =>
   jwt.sign(payload, JWT_SECRET, { expiresIn: '1h' });
 
+const getCookieOptions = req => {
+  const origin = req.get('origin') || '';
+  const host = req.get('host') || '';
+
+  const isProductionDomain =
+    origin.includes('assignment.duckdns.org') ||
+    host.includes('assignment.duckdns.org');
+
+  if (isProductionDomain) {
+    return {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'none',
+      path: '/',
+    };
+  }
+
+  return {
+    httpOnly: true,
+    secure: false,
+    sameSite: 'lax',
+    path: '/',
+  };
+};
+
 export const signup = async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -22,7 +47,7 @@ export const signup = async (req, res) => {
     const token = generateToken({ id: newUser._id });
 
     res
-      .cookie('token', token, { httpOnly: true })
+      .cookie('token', token, getCookieOptions(req))
       .json({
         message: 'User created successfully',
         user: { name: newUser.name, email: newUser.email },
@@ -49,7 +74,7 @@ export const login = async (req, res) => {
     const token = generateToken({ id: user._id });
 
     res
-      .cookie('token', token, { httpOnly: true })
+      .cookie('token', token, getCookieOptions(req))
       .json({
         message: 'Login successful',
         user: { name: user.name, email: user.email },
@@ -60,5 +85,5 @@ export const login = async (req, res) => {
 };
 
 export const logout = (req, res) => {
-  res.clearCookie('token').json({ message: 'Logged out successfully' });
+  res.clearCookie('token', { path: '/' }).json({ message: 'Logged out successfully' });
 };
