@@ -8,8 +8,16 @@ const generateToken = (payload) => {
   return jwt.sign(payload, JWT_SECRET, { expiresIn: '1h' });
 };
 
+// Decide cookie attributes based on environment.
+// On Render (process.env.RENDER === 'true') or when NODE_ENV is 'production',
+// we must use SameSite='none' and secure=true so that the Vercel frontend
+// can send cookies cross-site to the Render backend.
+// For local development, we fall back to lax / insecure cookies so that
+// http://localhost works without HTTPS.
 const getCookieOptions = () => {
-  if (process.env.NODE_ENV === 'production') {
+  const isHostedProd = process.env.NODE_ENV === 'production' || process.env.RENDER === 'true';
+
+  if (isHostedProd) {
     return {
       httpOnly: true,
       secure: true,
