@@ -25,10 +25,7 @@ app.set('trust proxy', 1);
 // We cannot use '*' together with credentials, so we use a dynamic origin
 // function that reflects the request origin.
 app.use(cors({
-    origin: (origin, callback) => {
-        callback(null, true);
-    },
-    credentials: true,
+    origin: '*',
 }));
 app.use(express.json());
 app.use(cookieParser());
