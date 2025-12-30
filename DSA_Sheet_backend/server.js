@@ -7,7 +7,6 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import authRoutes from './routes/authRoutes.js';
 import topicRoutes from './routes/topicRoutes.js';
-import seedDatabase from './services/seedService.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -20,13 +19,12 @@ const PORT = process.env.PORT || 5000;
 // Behind a reverse proxy (e.g., nginx/ELB) so that req.protocol reflects HTTPS correctly
 app.set('trust proxy', 1);
 
-// Middleware
-// Allow requests from any origin while still supporting credentials.
-// We cannot use '*' together with credentials, so we use a dynamic origin
-// function that reflects the request origin.
+
 app.use(cors({
-    origin: '*',
+  origin: true, // reflect request origin
+  credentials: true
 }));
+
 app.use(express.json());
 app.use(cookieParser());
 

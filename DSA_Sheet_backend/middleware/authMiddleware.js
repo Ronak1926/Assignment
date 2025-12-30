@@ -13,13 +13,19 @@ export const protect = async (req, res, next) => {
 
     const decoded = jwt.verify(token, JWT_SECRET);
 
-    req.user = await User.findById(decoded.id).select('-password');
-    if (!req.user) {
+    const user = await User.findById(decoded.id).select('-password');
+    if (!user) {
       return res.status(401).json({ message: 'Not authorized, user not found' });
     }
 
+    req.user = user;
     next();
   } catch (error) {
-    res.status(401).json({ message: 'Not authorized, token failed' });
+    return res.status(401).json({
+      message:
+        error.name === 'TokenExpiredError'
+          ? 'Session expired'
+          : 'Not authorized',
+    });
   }
 };
