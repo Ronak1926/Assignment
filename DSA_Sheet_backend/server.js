@@ -18,9 +18,14 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
+// Allow requests from any origin while still supporting credentials.
+// We cannot use '*' together with credentials, so we use a dynamic origin
+// function that reflects the request origin.
 app.use(cors({
-    origin: 'http://localhost:5173', // Vite default port
-    credentials: true
+    origin: (origin, callback) => {
+        callback(null, true);
+    },
+    credentials: true,
 }));
 app.use(express.json());
 app.use(cookieParser());
