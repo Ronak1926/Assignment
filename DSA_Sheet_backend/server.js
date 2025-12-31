@@ -3,25 +3,21 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import path from 'path';
-import { fileURLToPath } from 'url';
 import authRoutes from './routes/authRoutes.js';
 import topicRoutes from './routes/topicRoutes.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
-dotenv.config({ path: path.join(__dirname, '../.env') });
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Behind a reverse proxy (e.g., nginx/ELB) so that req.protocol reflects HTTPS correctly
-app.set('trust proxy', 1);
+// app.set('trust proxy', 1);
 
 
 app.use(cors({
-  origin: "https://assignment-git-master-ronak1926s-projects.vercel.app",
+  origin: ["http://localhost:5173", "https://assignment-two-omega-24.vercel.app"],
   credentials: true
 }));
 
