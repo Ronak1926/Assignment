@@ -15,9 +15,10 @@ const generateToken = (payload) => {
 // For local development, we fall back to lax / insecure cookies so that
 // http://localhost works without HTTPS.
 const getCookieOptions = () => {
-  const isHostedProd = process.env.NODE_ENV === 'production' || process.env.RENDER === 'true';
+  const isHostedProd = process.env.NODE_ENV === 'production';
 
   if (isHostedProd) {
+    console.log('Using hosted production cookie settings (SameSite=None; Secure)');
     return {
       httpOnly: true,
       secure: true,
